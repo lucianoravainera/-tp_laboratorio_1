@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1472502661 source:d:\utn\tecnicatura programacion\programacion 1-lab1\tp calculadora\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1457052376 d:\utn\tecnicatura programacion\programacion 1-lab1\tp calculadora\tp_1_cascara\funciones.h
+
+1472515278 source:d:\ravainera\asas\tp calculadora\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1472506902 d:\ravainera\asas\tp calculadora\tp_1_cascara\funciones.h
+
+1472515473 source:d:\ravainera\asas\tp calculadora\tp_1_cascara\funciones.c
+	"funciones.h"
+
+1473395021 source:d:\utn\tecnicatura programacion\prog1\tp calculadora\tp_1_cascara\funciones.c
+	"funciones.h"
+
+1473393738 d:\utn\tecnicatura programacion\prog1\tp calculadora\tp_1_cascara\funciones.h
+
+1473395071 source:d:\utn\tecnicatura programacion\prog1\tp calculadora\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1473395021 source:d:\utn\tecnicatura programacion\tpcalculadoraparaentregar\funciones.c
+	"funciones.h"
+
+1473393738 d:\utn\tecnicatura programacion\tpcalculadoraparaentregar\funciones.h
+
+1473395071 source:d:\utn\tecnicatura programacion\tpcalculadoraparaentregar\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
