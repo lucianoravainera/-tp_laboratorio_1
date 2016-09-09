@@ -86,12 +86,12 @@ void division (float numerouno,float numeroDos)
         if(numeroDos==0)
         {
             resultadoDivision = -1;
-            printf("no se puede dividir por 0.\n");
+            printf("No se puede dividir por 0.\n");
         }
         else
         {
         resultadoDivision = numerouno/numeroDos;
-        printf("el resultado de la division es: %f\n",resultadoDivision);
+        printf("El resultado de la division es: %f\n",resultadoDivision);
         }
     //return resultadoDivision;
 }
