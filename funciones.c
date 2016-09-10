@@ -15,7 +15,7 @@ int menu (float numeroUno,float numeroDos ,char menuTexto[],char errorTexto[],in
         int respuesta,opcion;
         printf("1- Ingresar 1er operando (A= %.2f)\n2- Ingresar 2do operando (B= %.2f)\n",numeroUno,numeroDos);
         printf("%s",menuTexto);
-        scanf("%d",&opcion);
+        scanf("%d",&opcion);//getch ()!='\n';
         if(opcion<=hasta && opcion>=desde)
         {
             respuesta = opcion;
@@ -115,10 +115,16 @@ void multiplicacion (float numerouno,float numeroDos)
  */
 
 
-int factorial (int numerouno)
+int factorial (float numerouno)
     {
-    int resultadoFactorial;
-
+    int resultadoFactorial,aux;
+    aux=numerouno;
+    aux=(int)aux;
+    if(numerouno<0||aux!=numerouno)
+    {
+        resultadoFactorial = -1;
+    }
+    else {
     if(numerouno==0)  //por definicion el factorial de 0 es 1
         {
         resultadoFactorial = 1;
@@ -126,19 +132,22 @@ int factorial (int numerouno)
         else{
     resultadoFactorial = numerouno * factorial(numerouno-1);
         }
-
+            }
     return resultadoFactorial;
 
     }
-
 /** \brief toma un numero, lo envia a la funcion factorial y muestra el resultado
  * \param numerouno numero a calcular
  */
 
 
-void mostrarFact (int numerouno)
+void mostrarFact (float numerouno)
 {
   int resultadoFactoriala =factorial(numerouno);
+  if(resultadoFactoriala== -1)
+  {
+      printf("Error,no existe factorial de numero negativo a flotante\n");
+  }else{
   printf("El factorial del primer operando es: %d\n",resultadoFactoriala);
-
+  }
 }

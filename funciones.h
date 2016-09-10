@@ -6,6 +6,6 @@ void suma (float numerouno,float numeroDos);
 void resta (float numerouno,float numeroDos);
 void division (float numerouno,float numeroDos);
 void multiplicacion (float numerouno,float numeroDos);
-int factorial (int numerouno);
-void mostrarFact (int numerouno);
+int factorial (float numerouno);
+void mostrarFact (float numerouno);
 #endif // FUNCIONES_H_INCLUDED

@@ -27,7 +27,8 @@ int main()
                 break;
             case 3:
                 suma(numeroUno,numeroDos);
-                getch ()!='\n';
+                getch ()!='\n';getch ()!='\n';
+
                 break;
             case 4:
                 resta(numeroUno,numeroDos);
