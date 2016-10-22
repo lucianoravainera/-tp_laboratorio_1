@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1461423747 source:d:\codbarra\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1461715078 source:d:\davidfernandez\graficobarra\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1461715080 source:e:\utn\tp2\graficobarra\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1461715080 source:c:\users\lucho\desktop\tp2\graficobarra\main.c
+	<stdio.h>
+	<stdlib.h>
+
