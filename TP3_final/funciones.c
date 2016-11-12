@@ -105,7 +105,7 @@ int ingresar(eMovie* movie,int length)
     if(retorno)
     {
         if(!getPuntaje(movie,length,&aux.puntaje))
-            retorno=0;
+            {retorno=0;}
         else
         {
             strcpy(movie[ind].descripcion,aux.descripcion);
@@ -282,7 +282,7 @@ int GetLink(eMovie* movie,int longitud, char input[])
     {
         system("cls");
         getString("Ingrese link de imagen de pelicula",input);
-        while(strlen(input)>100||strlen(input)<1)
+        while(strlen(input)>500||strlen(input)<1)
         {
             if(reingresar("Error","Desea reingresar titulo? s/n\n")=='s')
             {
@@ -577,7 +577,7 @@ void generarPagina(eMovie movie[],int longitud)
     FILE* archivo;
     int i;
         archivo=fopen("index.html","wb");
-        fprintf(archivo,"<!DOCTYPE html>\n<html>\n<head>\n<title>Listado de peliculas TP3</title>\n</head>\n<body><article class='col-md-4 article-intro'>");
+        fprintf(archivo,"<!DOCTYPE html>\n<html>\n<head>\n<title>Listado de peliculas TP3</title>\n<link href='css/bootstrap.min.css' rel='stylesheet'>\n<link href='css/custom.css' rel='stylesheet'>\n</head>\n<body><article class='col-md-4 article-intro'>");
         for(i=0;i<longitud;i++)
         {
             if(movie[i].estado != 1)
@@ -591,8 +591,11 @@ void generarPagina(eMovie movie[],int longitud)
             fprintf(archivo,"<li>Duracion:%d minutos</li></ul>",movie[i].duracion);
             fprintf(archivo,"<p>%s</p>",movie[i].descripcion);
         }
-        fprintf(archivo,"</article></body></html>");
+        fprintf(archivo,"</article><script src='js/jquery-1.11.3.min.js'></script><script src='js/bootstrap.min.js'></script><script src='js/holder.min.js'></script></body></html>");
         fclose(archivo);
+        printf("pagina generada con exito!\n");
+        system("pause");
+        system("cls");
 }
 
 int guardar(eMovie* movie, int longitud)
